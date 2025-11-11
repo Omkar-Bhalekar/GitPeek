@@ -20,12 +20,10 @@ document.querySelector('#button').addEventListener('click', function () {
 
         document.querySelector('#image').innerHTML = `<img src="${data.avatar_url}"></img>`
 
-        document.querySelector('#followers').innerHTML = `<p>${data.name}</p><br><p>Total Followers: ${data.followers}</p><br><p>Total Repo Count: ${data.public_repos}</p>`
+        document.querySelector('#followers').innerHTML = `<p>${data.name}</p><p> Followers : ${data.followers}</p><p>Total Repo Count : ${data.public_repos}</p>`;
         }
         
-        else{
-            document.querySelector('#container').innerHTML = `<p>User Does Not Exist!!</p>`
-        }
+        
     }
 
     xhr.send();
